@@ -30,6 +30,7 @@ Step 7:Print Approximate Probabilities:
 (i) Print the calculated approximate probabilities for the specified query_variable.<br>
 
 ## Program :
+```
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.sampling import GibbsSampling
@@ -60,7 +61,7 @@ query_variable='Burglary'
 query_result=samples[query_variable].value_counts(normalize=True)
 print("\nApproximate Probabilities of {}:".format(query_variable))
 print(query_result)
-
+```
 ## Output :
 ![image](https://github.com/Booshanram/Ex-No.-4--Implementation-of-Approximate-Inference-in-Bayesian-Networks/assets/113018636/283b5e85-0232-4b16-9ae6-e0c820041b20)
 
